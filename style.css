@@ -1,0 +1,132 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    padding: 0px;
+    margin: 0px;
+}
+
+.body {
+    background: rgb(66, 66, 66);
+}
+
+.nav {
+    background:black;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+
+}
+
+.nav__ul {
+    text-align: right;
+}
+
+.nav__ul-li {
+    display: inline-block;
+    padding: 12px;
+    color: goldenrod;
+    transition: .8s;
+}
+
+.nav__ul-li a{
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(85, 73, 5);
+    color: goldenrod;
+    padding: 10px; /*Solucion temporal preguntarle a mati por I*/
+}
+
+.nav__ul-li i{
+    width: 30px; /*PEDIR AYUDA A MATI*/
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nav__ul-li:hover > a{
+    color:rgb(0, 0, 0);
+    
+}
+
+.nav__ul-li:hover {
+    color:rgb(0, 0, 0);
+    background: rgb(255, 255, 0);
+    border-radius: 15px;
+}
+
+.nav_responsive__ul {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .nav__ul {
+        display: none;
+    }
+    .nav_responsive__ul {
+        display: block;
+        text-align: center;
+    }
+    
+}
+
+.nav_responsive__ul-button-titulo {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+/*Preguntarle a mati como subir un poquito mas el boton*/
+.nav_responsive__ul-button {
+    font-size: 30px;
+    color: goldenrod;
+}
+
+.nav_responsive__ul-button:active {
+    color:rgb(224, 196, 33)
+}
+
+.nav_responsive__ul:hover > .nav_responsive__ul-container_li {
+    top: 57px;
+
+}
+
+.nav_responsive__ul-button-container {
+    position: relative;
+}
+
+
+.nav_responsive__ul-li {
+    padding: 12px;
+    color: goldenrod;
+    transition: .8s;
+    
+    
+}
+
+.nav_responsive__ul-li a{
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(85, 73, 5);
+    color: goldenrod;
+    padding: 10px; /*Solucion temporal preguntarle a mati por I*/
+}
+
+.nav_responsive__ul-li i{
+    width: 30px; /*PEDIR AYUDA A MATI*/
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.nav_responsive__ul-li:active > a{
+    color:rgb(0, 0, 0);
+    
+}
+.nav_responsive__ul-li:active {
+    color:rgb(0, 0, 0);
+    background: rgb(255, 255, 0);
+    border-radius: 15px;
+}
+
+.nav_responsive__ul-container_li {
+    position: absolute;
+    width: 100%;
+    top: -1000px;
+    background: black;
+    margin: auto;
+}
